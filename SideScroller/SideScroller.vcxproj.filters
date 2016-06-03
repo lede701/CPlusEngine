@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TheGame\TheGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TheGame\TheGame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\Maps\Image-Tileset.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\_Spritesheet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Background.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Object_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Object_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Object_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Object_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Object_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Object_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Object_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Object_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Object_9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Object_10.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Object_11.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Object_12.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Object_13.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Object_14.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Object_15.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Object_16.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Object_17.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Object_18.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Object_19.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Object_20.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Object_21.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Tile_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Tile_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Tile_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Tile_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Tile_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Tile_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Tile_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Tile_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Tile_9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Tile_10.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Tile_11.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Tile_12.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Tile_13.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Tile_14.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\Tile_15.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\_sky-tiles.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Maps\Assets\png\shrubs-small.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LightGobo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\RockHeadSpriteSheet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\vase.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maps\scoller.tide" />
+    <None Include="Resources\Maps\Assets\LudicArts.com.url" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Resources\Maps\Assets\help file - LudicArts.txt" />
+    <Text Include="Resources\RockHeadSpriteSheet.txt" />
+  </ItemGroup>
+</Project>

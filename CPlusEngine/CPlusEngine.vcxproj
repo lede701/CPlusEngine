@@ -11,18 +11,22 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C5D63CD4-63BA-47EA-B04F-7A7D59E30796}</ProjectGuid>
+    <ProjectGuid>{F772B22A-E40D-407E-9DB1-4480AC14E88A}</ProjectGuid>
     <RootNamespace>CPlusEngine</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -38,7 +42,14 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(LIBSDL)\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LIBSDL)\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(LIBSDL)\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LIBSDL)\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -47,6 +58,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -61,9 +73,121 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Windows</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="PlusEngine\Entity\Components\Render\PanelRender.h" />
+    <ClInclude Include="PlusEngine\UI\label.h" />
+    <ClInclude Include="PlusEngine\UI\button.h" />
+    <ClInclude Include="PlusEngine\UI\ButtonStates.h" />
+    <ClInclude Include="PlusEngine\UI\panel.h" />
+    <ClInclude Include="PlusEngine\Entity\Components\components.h" />
+    <ClInclude Include="PlusEngine\Factories\EntityFactory.h" />
+    <ClInclude Include="PlusEngine\Controller\Commands\CmdHorizontal.h" />
+    <ClInclude Include="PlusEngine\Controller\Commands\CmdVertical.h" />
+    <ClInclude Include="PlusEngine\Controller\Commands\ICommand.h" />
+    <ClInclude Include="PlusEngine\Controller\MouseController.h" />
+    <ClInclude Include="PlusEngine\Controller\KeyboardController.h" />
+    <ClInclude Include="PlusEngine\Controller\IController.h" />
+    <ClInclude Include="PlusEngine\Objects\Cameras\ICamera.h" />
+    <ClInclude Include="PlusEngine\Objects\Cameras\Camera.h" />
+    <ClInclude Include="PlusEngine\Context.h" />
+    <ClInclude Include="PlusEngine\Entity\IComponent.h" />
+    <ClInclude Include="PlusEngine\Objects\DGameEntity.h" />
+    <ClInclude Include="PlusEngine\CoreEngine.h" />
+    <ClInclude Include="PlusEngine\Entity\Entity.h" />
+    <ClInclude Include="PlusEngine\Error\EngineError.h" />
+    <ClInclude Include="PlusEngine\Events\EventArgs.h" />
+    <ClInclude Include="PlusEngine\Events\EventErrorArgs.h" />
+    <ClInclude Include="PlusEngine\Events\EventItem.h" />
+    <ClInclude Include="PlusEngine\Events\EventKeyArgs.h" />
+    <ClInclude Include="PlusEngine\Events\EventManager.h" />
+    <ClInclude Include="PlusEngine\Events\EventMouseArgs.h" />
+    <ClInclude Include="PlusEngine\Events\EventType.h" />
+    <ClInclude Include="PlusEngine\Events\IHandler.h" />
+    <ClInclude Include="PlusEngine\Events\ITimeHandler.h" />
+    <ClInclude Include="PlusEngine\Events\TimedEvent.h" />
+    <ClInclude Include="PlusEngine\Events\TimeType.h" />
+    <ClInclude Include="PlusEngine\Graphics\GfxColor.h" />
+    <ClInclude Include="PlusEngine\Graphics\GfxTexture.h" />
+    <ClInclude Include="PlusEngine\Graphics\IGraphics.h" />
+    <ClInclude Include="PlusEngine\Graphics\SdlGfx.h" />
+    <ClInclude Include="PlusEngine\Input\IInput.h" />
+    <ClInclude Include="PlusEngine\Input\KeyCodes.h" />
+    <ClInclude Include="PlusEngine\Input\KeyState.h" />
+    <ClInclude Include="PlusEngine\Input\SdlInput.h" />
+    <ClInclude Include="PlusEngine\Math\Math.h" />
+    <ClInclude Include="PlusEngine\Math\Vector2D.h" />
+    <ClInclude Include="PlusEngine\Math\Rect2D.h" />
+    <ClInclude Include="PlusEngine\Entity\Transform.h" />
+    <ClInclude Include="PlusEngine\Math\tupal.h" />
+    <ClInclude Include="PlusEngine\Objects\IDrawable.h" />
+    <ClInclude Include="PlusEngine\Objects\IUpdateable.h" />
+    <ClInclude Include="PlusEngine\Scene.h" />
+    <ClInclude Include="PlusEngine\Objects\UGameEntity.h" />
+    <ClInclude Include="PlusEngine\Objects\UDGameEntity.h" />
+    <ClInclude Include="PlusEngine\Entity\Components\Render\TextureRender.h" />
+    <ClInclude Include="PlusEngine\Entity\Components\Updaters\UpdateCmp.h" />
+    <ClInclude Include="PlusEngine\UI\ui.h" />
+    <ClInclude Include="PlusEngine\UI\UIAlign.h" />
+    <ClInclude Include="PlusEngine\UI\UIFont.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="PlusEngine\Graphics\SplashScreen.h" />
+    <ClInclude Include="PlusEngine\Factories\UIFactory.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PlusEngine\Entity\Components\Render\PanelRender.cpp" />
+    <ClCompile Include="PlusEngine\UI\label.cpp" />
+    <ClCompile Include="PlusEngine\UI\button.cpp" />
+    <ClCompile Include="PlusEngine\UI\panel.cpp" />
+    <ClCompile Include="PlusEngine\Factories\EntityFactory.cpp" />
+    <ClCompile Include="PlusEngine\Controller\Commands\CmdHorizontal.cpp" />
+    <ClCompile Include="PlusEngine\Controller\Commands\CmdVertical.cpp" />
+    <ClCompile Include="PlusEngine\Controller\Commands\ICommand.cpp" />
+    <ClCompile Include="PlusEngine\Controller\MouseController.cpp" />
+    <ClCompile Include="PlusEngine\Controller\KeyboardController.cpp" />
+    <ClCompile Include="PlusEngine\Controller\IController.cpp" />
+    <ClCompile Include="PlusEngine\Objects\Cameras\ICamera.cpp" />
+    <ClCompile Include="PlusEngine\Objects\Cameras\Camera.cpp" />
+    <ClCompile Include="PlusEngine\Context.cpp" />
+    <ClCompile Include="PlusEngine\Entity\IComponent.cpp" />
+    <ClCompile Include="PlusEngine\Objects\DGameEntity.cpp" />
+    <ClCompile Include="PlusEngine\CoreEngine.cpp" />
+    <ClCompile Include="PlusEngine\Entity\Entity.cpp" />
+    <ClCompile Include="PlusEngine\Error\EngineError.cpp" />
+    <ClCompile Include="PlusEngine\Events\EventArgs.cpp" />
+    <ClCompile Include="PlusEngine\Events\EventErrorArgs.cpp" />
+    <ClCompile Include="PlusEngine\Events\EventKeyArgs.cpp" />
+    <ClCompile Include="PlusEngine\Events\EventManager.cpp" />
+    <ClCompile Include="PlusEngine\Events\EventMouseArgs.cpp" />
+    <ClCompile Include="PlusEngine\Events\IHandler.cpp" />
+    <ClCompile Include="PlusEngine\Events\ITimeHandler.cpp" />
+    <ClCompile Include="PlusEngine\Graphics\GfxColor.cpp" />
+    <ClCompile Include="PlusEngine\Graphics\GfxTexture.cpp" />
+    <ClCompile Include="PlusEngine\Graphics\IGraphics.cpp" />
+    <ClCompile Include="PlusEngine\Graphics\SdlGfx.cpp" />
+    <ClCompile Include="PlusEngine\Input\IInput.cpp" />
+    <ClCompile Include="PlusEngine\Input\SdlInput.cpp" />
+    <ClCompile Include="PlusEngine\Math\Vector2D.hpp" />
+    <ClCompile Include="PlusEngine\Math\Rect2D.hpp" />
+    <ClCompile Include="PlusEngine\Entity\Transform.cpp" />
+    <ClCompile Include="PlusEngine\Scene.cpp" />
+    <ClCompile Include="PlusEngine\Objects\UGameEntity.cpp" />
+    <ClCompile Include="PlusEngine\Objects\UDGameEntity.cpp" />
+    <ClCompile Include="PlusEngine\Entity\Components\Render\TextureRender.cpp" />
+    <ClCompile Include="PlusEngine\Entity\Components\Updaters\UpdateCmp.cpp" />
+    <ClCompile Include="PlusEngine\Graphics\SplashScreen.cpp" />
+    <ClCompile Include="PlusEngine\Factories\UIFactory.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CPlusEngine.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\zscreditlogo_v1.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

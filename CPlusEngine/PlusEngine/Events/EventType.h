@@ -1,0 +1,34 @@
+#ifndef H_EVENTTYPE
+#define H_EVENTTYPE
+
+namespace CPlusEngine{ namespace Events
+{
+
+	enum EventType
+	{
+		ET_NONE,
+		ET_CUSTOM,
+		ET_ERROR,
+		ET_ENGINE_READY,
+		ET_ENGINE_STARTING,
+		ET_ENGINE_ENDING,
+		ET_KEY,
+		ET_KEYDOWN,
+		ET_KEYUP,
+		ET_MOUSE_MOVE,
+		ET_MOUSE_CLICK,
+		ET_QUIT,
+		ET_MENU,
+		ET_SCENE_LOAD,
+		ET_SCENE_UNLOAD,
+		ET_GRAPHICS_INIT,
+		ET_GRAPHICS_READY,
+		ET_STARTFRAME,
+		ET_ENDFRAME,
+		ET_FRAMEDISPLAYED,
+		ET_TEST
+	};
+
+} }
+
+#endif

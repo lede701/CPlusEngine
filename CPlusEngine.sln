@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CPlusEngine", "CPlusEngine\CPlusEngine.vcxproj", "{F772B22A-E40D-407E-9DB1-4480AC14E88A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitEngine", "UnitEngine\UnitEngine.vcxproj", "{4E0E6A58-CB1F-4E29-8007-3E797D6253CF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SideScroller", "SideScroller\SideScroller.vcxproj", "{3DC48111-F46C-4B4B-B320-4FE8B9265277}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Rally", "Rally\Rally.vcxproj", "{998B365A-16F1-48A3-AF22-86207A98C4E5}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs40
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CPlusEngine\\CPlusEngine.vcxproj
+		SccProjectName1 = CPlusEngine
+		SccLocalPath1 = CPlusEngine
+		SccProjectUniqueName2 = UnitEngine\\UnitEngine.vcxproj
+		SccProjectName2 = UnitEngine
+		SccLocalPath2 = UnitEngine
+		SccProjectUniqueName3 = SideScroller\\SideScroller.vcxproj
+		SccProjectName3 = SideScroller
+		SccLocalPath3 = SideScroller
+		SccProjectUniqueName4 = Rally\\Rally.vcxproj
+		SccProjectName4 = Rally
+		SccLocalPath4 = Rally
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F772B22A-E40D-407E-9DB1-4480AC14E88A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F772B22A-E40D-407E-9DB1-4480AC14E88A}.Debug|Win32.Build.0 = Debug|Win32
+		{F772B22A-E40D-407E-9DB1-4480AC14E88A}.Release|Win32.ActiveCfg = Release|Win32
+		{F772B22A-E40D-407E-9DB1-4480AC14E88A}.Release|Win32.Build.0 = Release|Win32
+		{4E0E6A58-CB1F-4E29-8007-3E797D6253CF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4E0E6A58-CB1F-4E29-8007-3E797D6253CF}.Debug|Win32.Build.0 = Debug|Win32
+		{4E0E6A58-CB1F-4E29-8007-3E797D6253CF}.Release|Win32.ActiveCfg = Release|Win32
+		{4E0E6A58-CB1F-4E29-8007-3E797D6253CF}.Release|Win32.Build.0 = Release|Win32
+		{3DC48111-F46C-4B4B-B320-4FE8B9265277}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3DC48111-F46C-4B4B-B320-4FE8B9265277}.Debug|Win32.Build.0 = Debug|Win32
+		{3DC48111-F46C-4B4B-B320-4FE8B9265277}.Release|Win32.ActiveCfg = Release|Win32
+		{3DC48111-F46C-4B4B-B320-4FE8B9265277}.Release|Win32.Build.0 = Release|Win32
+		{998B365A-16F1-48A3-AF22-86207A98C4E5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{998B365A-16F1-48A3-AF22-86207A98C4E5}.Debug|Win32.Build.0 = Debug|Win32
+		{998B365A-16F1-48A3-AF22-86207A98C4E5}.Release|Win32.ActiveCfg = Release|Win32
+		{998B365A-16F1-48A3-AF22-86207A98C4E5}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

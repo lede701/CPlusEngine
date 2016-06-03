@@ -14,4 +14,321 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PlusEngine\Entity\Entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Math\Vector2D.hpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Entity\Transform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\CoreEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Error\EngineError.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Math\Rect2D.hpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Events\EventArgs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Events\EventErrorArgs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Events\EventKeyArgs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Events\EventManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Events\EventMouseArgs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Events\IHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Events\ITimeHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Input\IInput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Input\SdlInput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Graphics\GfxColor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Graphics\GfxTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Graphics\IGraphics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Graphics\SdlGfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Objects\DGameEntity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Objects\UGameEntity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Objects\UDGameEntity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Entity\IComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Context.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Entity\Components\Render\TextureRender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Objects\Cameras\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Objects\Cameras\ICamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Entity\Components\Updaters\UpdateCmp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Controller\IController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Controller\KeyboardController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Controller\MouseController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Controller\Commands\ICommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Controller\Commands\CmdVertical.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Controller\Commands\CmdHorizontal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Factories\EntityFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Graphics\SplashScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\UI\button.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\UI\panel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Factories\UIFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\UI\label.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusEngine\Entity\Components\Render\PanelRender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PlusEngine\Math\Vector2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Math\Rect2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Math\Math.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Entity\Entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Entity\Transform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\CoreEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Error\EngineError.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Math\tupal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Events\EventArgs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Events\EventErrorArgs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Events\EventItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Events\EventKeyArgs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Events\EventManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Events\EventMouseArgs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Events\EventType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Events\IHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Events\ITimeHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Events\TimedEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Events\TimeType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Input\IInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Input\KeyCodes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Input\KeyState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Input\SdlInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Graphics\GfxColor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Graphics\GfxTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Graphics\IGraphics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Graphics\SdlGfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Objects\IUpdateable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Objects\DGameEntity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Objects\IDrawable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Objects\UGameEntity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Objects\UDGameEntity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Entity\IComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Entity\Components\Render\TextureRender.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Objects\Cameras\Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Objects\Cameras\ICamera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Entity\Components\Updaters\UpdateCmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Controller\IController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Controller\KeyboardController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Controller\MouseController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Controller\Commands\ICommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Controller\Commands\CmdVertical.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Controller\Commands\CmdHorizontal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Factories\EntityFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Entity\Components\components.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Graphics\SplashScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\UI\button.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\UI\panel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\UI\ButtonStates.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\UI\ui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Factories\UIFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\UI\label.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\UI\UIAlign.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\UI\UIFont.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusEngine\Entity\Components\Render\PanelRender.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CPlusEngine.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\zscreditlogo_v1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
 </Project>

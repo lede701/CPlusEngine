@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3DC48111-F46C-4B4B-B320-4FE8B9265277}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <RootNamespace>SideScroller</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IsCompassProject>True</IsCompassProject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)CPlusEngine;$(LIBSDL)\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)$(Configuration);$(LIBSDL)\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)CPlusEngine;$(LIBSDL)\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)$(Configuration);$(LIBSDL)\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="TheGame\TheGame.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TheGame\TheGame.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\LightGobo.png" />
+    <Image Include="Resources\Maps\Assets\png\Background.png" />
+    <Image Include="Resources\Maps\Assets\png\Object_1.png" />
+    <Image Include="Resources\Maps\Assets\png\Object_10.png" />
+    <Image Include="Resources\Maps\Assets\png\Object_11.png" />
+    <Image Include="Resources\Maps\Assets\png\Object_12.png" />
+    <Image Include="Resources\Maps\Assets\png\Object_13.png" />
+    <Image Include="Resources\Maps\Assets\png\Object_14.png" />
+    <Image Include="Resources\Maps\Assets\png\Object_15.png" />
+    <Image Include="Resources\Maps\Assets\png\Object_16.png" />
+    <Image Include="Resources\Maps\Assets\png\Object_17.png" />
+    <Image Include="Resources\Maps\Assets\png\Object_18.png" />
+    <Image Include="Resources\Maps\Assets\png\Object_19.png" />
+    <Image Include="Resources\Maps\Assets\png\Object_2.png" />
+    <Image Include="Resources\Maps\Assets\png\Object_20.png" />
+    <Image Include="Resources\Maps\Assets\png\Object_21.png" />
+    <Image Include="Resources\Maps\Assets\png\Object_3.png" />
+    <Image Include="Resources\Maps\Assets\png\Object_4.png" />
+    <Image Include="Resources\Maps\Assets\png\Object_5.png" />
+    <Image Include="Resources\Maps\Assets\png\Object_6.png" />
+    <Image Include="Resources\Maps\Assets\png\Object_7.png" />
+    <Image Include="Resources\Maps\Assets\png\Object_8.png" />
+    <Image Include="Resources\Maps\Assets\png\Object_9.png" />
+    <Image Include="Resources\Maps\Assets\png\shrubs-small.png" />
+    <Image Include="Resources\Maps\Assets\png\Tile_1.png" />
+    <Image Include="Resources\Maps\Assets\png\Tile_10.png" />
+    <Image Include="Resources\Maps\Assets\png\Tile_11.png" />
+    <Image Include="Resources\Maps\Assets\png\Tile_12.png" />
+    <Image Include="Resources\Maps\Assets\png\Tile_13.png" />
+    <Image Include="Resources\Maps\Assets\png\Tile_14.png" />
+    <Image Include="Resources\Maps\Assets\png\Tile_15.png" />
+    <Image Include="Resources\Maps\Assets\png\Tile_2.png" />
+    <Image Include="Resources\Maps\Assets\png\Tile_3.png" />
+    <Image Include="Resources\Maps\Assets\png\Tile_4.png" />
+    <Image Include="Resources\Maps\Assets\png\Tile_5.png" />
+    <Image Include="Resources\Maps\Assets\png\Tile_6.png" />
+    <Image Include="Resources\Maps\Assets\png\Tile_7.png" />
+    <Image Include="Resources\Maps\Assets\png\Tile_8.png" />
+    <Image Include="Resources\Maps\Assets\png\Tile_9.png" />
+    <Image Include="Resources\Maps\Assets\png\_sky-tiles.png" />
+    <Image Include="Resources\Maps\Assets\png\_Spritesheet.png" />
+    <Image Include="Resources\Maps\Image-Tileset.png" />
+    <Image Include="Resources\RockHeadSpriteSheet.png" />
+    <Image Include="Resources\vase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maps\Assets\LudicArts.com.url" />
+    <None Include="Resources\Maps\scoller.tide" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Resources\Maps\Assets\help file - LudicArts.txt" />
+    <Text Include="Resources\RockHeadSpriteSheet.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
