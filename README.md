@@ -16,13 +16,12 @@ SDL library called LIBSDL.  You can find many good tutorials for Windows on
 how to create one on your system.  Here are the steps you will need to complete
 in order to compile this project:
 
-	1. Download and extract the SDL Library from http://www.libsdl.org
-	2. Setup LIBSDL environment variable to the SDL 2.0 library folder
-		a. Or change the path in the Visual C++ project to the location of the
-		SDL library
-	3. Copy all the DLL’s from the system type you’re compiling.  For example if your compiling this for a Win32 based computer copy all the x86 file from the SDL lib directory to your project compile directory.  For example if your destination directory is C:\CPlusEngine\Release then you will need to copy all the DLL to this folder from C:\CPlusEngine\CPlusEngine\lib\SDL2-2.0.3\lib\x86\
-	4. Compile the project in Visual Studio 2013
-	5. Run the solution!
+1. Download and extract the SDL Library from http://www.libsdl.org
+2. Setup LIBSDL environment variable to the SDL 2.0 library folder
+	a. Or change the path in the Visual C++ project to the location of the SDL library
+3. Copy all the DLL’s from the system type you’re compiling.  For example if your compiling this for a Win32 based computer copy all the x86 file from the SDL lib directory to your project compile directory.  For example if your destination directory is C:\CPlusEngine\Release then you will need to copy all the DLL to this folder from C:\CPlusEngine\CPlusEngine\lib\SDL2-2.0.3\lib\x86\
+4. Compile the project in Visual Studio 2013
+5. Run the solution!
 	
 The reason I create an environment variable is because I work on several different
 computers and don’t want to be always changing the path to the SDL library.
