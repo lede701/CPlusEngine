@@ -1,2 +1,14 @@
 *.sdf
 *.sdf
+*.obj
+CPlusEngine/Debug/CPlusEngine.log
+*.res
+*.tlog
+*.idb
+CPlusEngine/Debug/vc120.pdb
+*.lib
+*.dll
+*.exe
+*.ilk
+*.pdb
+Rally/Debug/Rally.log
